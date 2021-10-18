@@ -7,7 +7,7 @@ void Shape::print(){
 
 bool Shape::operator <(const Shape &s){
     bool returnVal = false;
-    if((this->area < s.area) || ((this->area == s.area) && (this->area < s.peri))){
+    if((this->area < s.area) || ((this->area == s.area) && (this->peri < s.peri))){
         returnVal = true;
     }
     return returnVal;

@@ -21,7 +21,7 @@ int main(){
     rectangle2->print();
     rectangle3->print();
     Shape *shapes [7] ={circ1,circ2,triang1,triang2,rectangle1,rectangle2,rectangle3};
-
+    
     for (size_t i = 0; i < 7; i++) {
         for (size_t j = i + 1; j < 7; j++) {
             if (*shapes[i] > *shapes[j]) std::cout << i << " is greater than " << j << std::endl;
